@@ -48,8 +48,8 @@ export default function EmailCapture() {
   }
 
   return (
-    <div className="w-full flex flex-col items-center">
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
+    <div className="w-full flex flex-col">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-lg">
         <input
           type="email"
           placeholder="Your email"
@@ -58,12 +58,12 @@ export default function EmailCapture() {
             setEmail(e.target.value)
             if (status === 'error') setStatus('idle')
           }}
-          className="flex-1 px-4 py-3 rounded-xl border border-gray-200 text-[#1a1a1a] text-base outline-none focus:border-[#2FA4D7] transition-colors placeholder:text-gray-400"
+          className="flex-1 px-5 py-4 rounded-xl border border-gray-200 text-[#1a1a1a] text-lg outline-none focus:border-[#2FA4D7] transition-colors placeholder:text-gray-400"
         />
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="cta-btn px-6 py-3 bg-[#2FA4D7] text-white font-semibold rounded-xl text-base disabled:opacity-60 whitespace-nowrap cursor-pointer"
+          className="cta-btn px-7 py-4 bg-[#2FA4D7] text-white font-semibold rounded-xl text-lg disabled:opacity-60 whitespace-nowrap cursor-pointer"
         >
           {status === 'loading' ? 'Joining…' : 'Get Early Access'}
         </button>
