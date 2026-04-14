@@ -4,7 +4,7 @@ import ChatUI from './ChatUI'
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden"
+      className="relative overflow-hidden min-h-screen flex flex-col justify-center"
       style={{
         background:
           'radial-gradient(circle, rgba(47,164,215,0.12) 1px, transparent 1px) 0 0 / 22px 22px, linear-gradient(to bottom, #CCE9F7 0%, #EEF7FD 40%, #ffffff 100%)',
