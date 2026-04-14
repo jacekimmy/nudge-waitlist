@@ -23,9 +23,9 @@ export default function SimplePitch() {
   }, [])
 
   return (
-    <section className="bg-[#F5F5F5] py-20 px-6">
-      <div ref={ref} className="section-hidden max-w-[800px] mx-auto w-full text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1a1a] tracking-tight">
+    <section className="bg-[#F5F5F5] py-28 px-10">
+      <div ref={ref} className="section-hidden max-w-[1200px] mx-auto w-full text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] tracking-tight">
           No Dashboard. No Setup. No Data Entry.
         </h2>
       </div>

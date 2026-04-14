@@ -53,32 +53,32 @@ export default function ChatUI() {
   }, [started, visibleCount])
 
   return (
-    <div className="bg-[#EFF3F6] rounded-2xl p-4 sm:p-5 shadow-md w-full">
+    <div className="bg-[#EFF3F6] rounded-2xl p-6 sm:p-7 shadow-md w-full">
       {/* Chat header */}
-      <div className="flex items-center gap-3 mb-4 pb-3 border-b border-[#dde4ea]">
-        <div className="w-8 h-8 rounded-full bg-[#2FA4D7] flex items-center justify-center text-white font-bold text-sm shrink-0">
+      <div className="flex items-center gap-3 mb-5 pb-4 border-b border-[#dde4ea]">
+        <div className="w-10 h-10 rounded-full bg-[#2FA4D7] flex items-center justify-center text-white font-bold text-base shrink-0">
           N
         </div>
         <div>
-          <p className="font-semibold text-[#1a1a1a] text-sm leading-tight">Nudge</p>
-          <p className="text-xs text-[#4a4a4a]">online</p>
+          <p className="font-semibold text-[#1a1a1a] text-base leading-tight">Nudge</p>
+          <p className="text-sm text-[#4a4a4a]">online</p>
         </div>
       </div>
 
       {/* Pre-start state: button */}
       {!started ? (
-        <div className="flex items-center justify-center min-h-[200px]">
+        <div className="flex items-center justify-center min-h-[260px]">
           <button
             onClick={() => setStarted(true)}
-            className="see-it-btn group flex items-center gap-2 px-5 py-3 bg-white border-2 border-[#2FA4D7] text-[#2FA4D7] font-semibold text-sm rounded-full cursor-pointer"
+            className="see-it-btn group flex items-center gap-2 px-6 py-3.5 bg-white border-2 border-[#2FA4D7] text-[#2FA4D7] font-semibold text-base rounded-full cursor-pointer"
           >
-            <span className="text-base">▶</span>
+            <span className="text-lg">▶</span>
             See it in action
           </button>
         </div>
       ) : (
         /* Messages */
-        <div className="space-y-2 min-h-[260px]">
+        <div className="space-y-3 min-h-[300px]">
           {messages.map((msg, i) => {
             if (i >= visibleCount) return null
 
@@ -101,7 +101,7 @@ export default function ChatUI() {
               >
                 <div className="max-w-[80%]">
                   <div
-                    className={`px-3 py-2.5 rounded-2xl text-sm leading-relaxed shadow-sm ${
+                    className={`px-4 py-3 rounded-2xl text-base leading-relaxed shadow-sm ${
                       isUser
                         ? 'bg-[#2FA4D7] text-white rounded-br-sm'
                         : 'bg-white text-[#1a1a1a] rounded-bl-sm'

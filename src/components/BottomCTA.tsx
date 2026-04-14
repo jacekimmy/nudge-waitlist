@@ -24,9 +24,9 @@ export default function BottomCTA() {
   }, [])
 
   return (
-    <section className="py-20 px-6">
-      <div ref={ref} className="section-hidden max-w-[800px] mx-auto w-full text-center flex flex-col items-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1a1a] mb-5 tracking-tight">
+    <section className="py-28 px-10">
+      <div ref={ref} className="section-hidden max-w-[1200px] mx-auto w-full text-center flex flex-col items-center">
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] mb-8 tracking-tight">
           Stop Losing Deals Because You Forgot
         </h2>
         <EmailCapture />
