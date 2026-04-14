@@ -17,7 +17,7 @@ export default function Hero() {
         </div>
 
         {/* Two-column layout: text left, chat right */}
-        <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-28">
           {/* Left: headline + CTA */}
           <div className="flex-1 space-y-9">
             {/* Pill badge */}
