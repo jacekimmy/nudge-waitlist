@@ -48,7 +48,7 @@ export default function EmailCapture() {
   }
 
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col items-center">
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-lg">
         <input
           type="email"
