@@ -40,18 +40,18 @@ export default function HowItWorks() {
   return (
     <section className="bg-[#F5F5F5] py-28 px-10">
       <div ref={ref} className="section-hidden max-w-[1200px] mx-auto w-full text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] mb-16 tracking-tight">
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] mb-20 tracking-tight">
           Here&rsquo;s How It Works
         </h2>
-        <div className="space-y-12 max-w-[680px] mx-auto text-left">
+        <div className="space-y-16 max-w-[680px] mx-auto text-left">
           {steps.map((step, i) => (
-            <div key={i} className="flex gap-8 items-start">
+            <div key={i} className="flex gap-10 items-start">
               <div className="text-6xl font-extrabold text-[#2FA4D7] leading-none shrink-0 w-12 text-center select-none">
                 {i + 1}
               </div>
-              <div className="pt-1">
-                <h3 className="text-2xl font-semibold text-[#1a1a1a] mb-2">{step.title}</h3>
-                <p className="text-[#4a4a4a] text-lg leading-relaxed">{step.body}</p>
+              <div className="pt-1 space-y-3">
+                <h3 className="text-2xl font-semibold text-[#1a1a1a]">{step.title}</h3>
+                <p className="text-[#4a4a4a] text-lg leading-loose">{step.body}</p>
               </div>
             </div>
           ))}

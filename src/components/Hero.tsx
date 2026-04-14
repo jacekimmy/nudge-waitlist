@@ -19,16 +19,16 @@ export default function Hero() {
         {/* Two-column layout: text left, chat right */}
         <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-16">
           {/* Left: headline + CTA */}
-          <div className="flex-1 space-y-7">
+          <div className="flex-1 space-y-9">
             {/* Pill badge */}
             <div className="inline-flex items-center gap-1.5 bg-[#D6EEF9] text-[#1a6a8a] text-base font-semibold px-4 py-2 rounded-full">
               <span className="w-2 h-2 rounded-full bg-[#2FA4D7] inline-block" />
               Coming soon
             </div>
-            <h1 className="text-6xl xl:text-7xl font-extrabold text-[#1a1a1a] leading-[1.05] tracking-tight">
+            <h1 className="text-6xl xl:text-7xl font-extrabold text-[#1a1a1a] leading-[1.1] tracking-tight">
               Your Clients Tracked. Your Follow-Ups Sent. You Did Nothing.
             </h1>
-            <p className="text-xl xl:text-2xl text-[#4a4a4a] leading-relaxed">
+            <p className="text-xl xl:text-2xl text-[#4a4a4a] leading-loose">
               Voice note your assistant after a client call. It handles everything else.
             </p>
             <EmailCapture />
